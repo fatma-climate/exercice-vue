@@ -60,7 +60,7 @@ export default {
   },
   mutations: {
     INITIALISE_STORE(state) {
-      let localStorageDishes = JSON.parse(localStorage.getItem('dishes'))
+      const localStorageDishes = JSON.parse(localStorage.getItem('dishes'))
       if (localStorageDishes && localStorageDishes.length) {
         state.dishes = localStorageDishes
       }
